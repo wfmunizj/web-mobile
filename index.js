@@ -32,6 +32,20 @@
             }
         };
 
+        const typingText = document.getElementById("typing-text");
+        const text = "Carregando...";
+        let index = 0;
+
+        const typeEffect = () => {
+            if (index < text.length) {
+                typingText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        };
+
+        typeEffect();
+
         requestAnimationFrame(updateProgress);
     });
 })();

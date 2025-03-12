@@ -52,3 +52,15 @@ progress::-moz-progress-bar {
     color: #333;
     text-align: center;
 }
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
