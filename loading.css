@@ -1,0 +1,81 @@
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+/* Estiliza a barra de progresso */
+progress {
+    width: 80vw;
+    /* Ocupa 80% da largura da tela */
+    max-width: 400px;
+    /* Limita a largura em telas grandes */
+    height: 8px;
+}
+
+progress::-webkit-progress-bar {
+    background: #ddd;
+}
+
+progress::-webkit-progress-value {
+    background: var(--secondary-color);
+}
+
+progress::-moz-progress-bar {
+    background: var(--secondary-color);
+}
+
+/* Esconde o conteúdo principal até o carregamento terminar */
+#content {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Classe para esconder a tela de loading */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-text {
+    font-size: clamp(14px, 4vw, 20px);
+    /* Ajusta dinamicamente */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #loading {
+        padding: 20px;
+    }
+
+    progress {
+        width: 90vw;
+        /* Aumenta a largura em telas menores */
+    }
+
+    #loading-text {
+        font-size: 16px;
+    }
+}

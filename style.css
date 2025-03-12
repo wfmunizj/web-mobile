@@ -11,10 +11,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -53,7 +52,7 @@ header {
     margin: 2rem 0;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .era-card:nth-child(even) {
