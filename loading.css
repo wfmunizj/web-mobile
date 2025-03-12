@@ -1,0 +1,54 @@
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+/* Estiliza a barra de progresso */
+progress {
+    width: 50%;
+    height: 10px;
+    appearance: none;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background: #ddd;
+}
+
+progress::-webkit-progress-value {
+    background: var(--secondary-color);
+}
+
+progress::-moz-progress-bar {
+    background: var(--secondary-color);
+}
+
+/* Esconde o conteúdo principal até o carregamento terminar */
+#content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Classe para esconder a tela de loading */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
