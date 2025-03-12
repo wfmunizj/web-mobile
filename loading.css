@@ -15,10 +15,11 @@
 
 /* Estiliza a barra de progresso */
 progress {
-    width: 50%;
-    height: 10px;
-    appearance: none;
-    border: none;
+    width: 80vw;
+    /* Ocupa 80% da largura da tela */
+    max-width: 400px;
+    /* Limita a largura em telas grandes */
+    height: 8px;
 }
 
 progress::-webkit-progress-bar {
@@ -36,7 +37,7 @@ progress::-moz-progress-bar {
 /* Esconde o conteúdo principal até o carregamento terminar */
 #content {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 /* Classe para esconder a tela de loading */
@@ -46,11 +47,10 @@ progress::-moz-progress-bar {
 }
 
 #loading-text {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    font-size: clamp(14px, 4vw, 20px);
+    /* Ajusta dinamicamente */
     text-align: center;
+    margin-top: 10px;
 }
 
 .cursor {
@@ -62,5 +62,20 @@ progress::-moz-progress-bar {
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #loading {
+        padding: 20px;
+    }
+
+    progress {
+        width: 90vw;
+        /* Aumenta a largura em telas menores */
+    }
+
+    #loading-text {
+        font-size: 16px;
     }
 }

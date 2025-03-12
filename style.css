@@ -11,10 +11,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
