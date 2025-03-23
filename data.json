@@ -1,0 +1,68 @@
+[
+    {
+        "titulo": "1983 - Motorola DynaTAC",
+        "descricao": "O primeiro celular portátil comercial do mundo",
+        "especificacoes": [
+            {
+                "peso": "1.1 kg",
+                "bateria": "30 minutos de conversação",
+                "preco": "$ 3.995"
+            }
+        ]
+    },
+    {
+        "titulo": "1996 - Motorola StarTAC",
+        "descricao": "O primeiro celular flip do mundo",
+        "especificacoes": [
+            {
+                "peso": "88 g",
+                "bateria": "1 hora de conversação",
+                "preco": "$ 1.000"
+            }
+        ]
+    },
+    {
+        "titulo": "2004 - Motorola RAZR V3",
+        "descricao": "O celular mais vendido do mundo",
+        "especificacoes": [
+            {
+                "peso": "95 g",
+                "bateria": "7 horas de conversação",
+                "preco": "$ 500"
+            }
+        ]
+    },
+    {
+        "titulo": "2007 - Apple iPhone",
+        "descricao": "O primeiro smartphone do mundo",
+        "especificacoes": [
+            {
+                "peso": "135 g",
+                "bateria": "8 horas de conversação",
+                "preco": "$ 499"
+            }
+        ]
+    },
+    {
+        "titulo": "2016 - Apple iPhone 7",
+        "descricao": "O primeiro iPhone sem entrada para fone de ouvido",
+        "especificacoes": [
+            {
+                "peso": "138 g",
+                "bateria": "14 horas de conversação",
+                "preco": "$ 649"
+            }
+        ]
+    },
+    {
+        "titulo": "2017 - Apple iPhone X",
+        "descricao": "O primeiro iPhone com tela OLED",
+        "especificacoes": [
+            {
+                "peso": "174 g",
+                "bateria": "21 horas de conversação",
+                "preco": "$ 999"
+            }
+        ]
+    }
+]
